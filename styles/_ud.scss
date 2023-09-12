@@ -1,0 +1,95 @@
+@use './sizes';
+@use './colors';
+
+@mixin smaller-h2($multiplier){
+    h2{
+        font-size: sizes.$title-size * $multiplier;
+
+        @include sizes.media-query(md) { 
+            font-size: sizes.$title-size * ($multiplier * 0.5);
+        }
+    }
+}
+
+#resultados{
+    p{
+        text-align: center;
+    }
+
+    @include smaller-h2(0.7);
+}
+
+#competencias,
+#presentation,
+#criterios,
+#criterios-2,
+#objetivos .objetivos-rd,
+#criterios-rd,
+#actividades{
+    @include smaller-h2(0.7);
+
+    $smaller-secondary-title-size: sizes.$secondary-title-size * 0.7;
+
+    h3{
+        font-size: $smaller-secondary-title-size;
+
+        @include sizes.media-query(md) { 
+            font-size: $smaller-secondary-title-size * 0.5;
+        }
+    }
+
+    h4{
+        font-size: $smaller-secondary-title-size * 0.7;
+
+        @include sizes.media-query(md) { 
+            font-size: $smaller-secondary-title-size * 0.35;
+        }
+    }
+
+    p{
+        font-size: sizes.$secondary-title-size * 0.4;
+
+        @include sizes.media-query(md) { 
+            font-size: sizes.$secondary-title-size * 0.3;
+        }
+    }
+}
+
+#contextualizacion{
+    text-align: center;
+}
+
+#objetivos{
+    .row .col-6{
+        display: flex;
+        align-items: center;
+    }
+}
+
+#actividades{
+    h3, h4, p{
+        margin-bottom: 0.75rem;
+    }
+}
+
+#competencias{
+    h2{
+        text-align: left;
+    }
+
+    .col-12 > .col-md-6:first-child{
+        border-right: 2px solid colors.$main-contrast-color;
+
+        @include sizes.media-query(md) { 
+            border-right: none;
+        }
+    }
+}
+
+#instrumentos{
+    .examenes{
+        border-top: 2px solid colors.$main-contrast-color;
+        margin-top: 1em;
+        padding-top: 1em;
+    }
+}

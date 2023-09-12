@@ -1,0 +1,76 @@
+@use './colors';
+@use './sizes';
+@use "sass:math";
+
+nav.navbar{
+    background-color: white;
+
+    justify-content: center;
+
+    height: sizes.$navbar-size;
+
+    .navbar-collapse{
+        flex-grow: initial;
+    }
+
+    .navbar-nav{
+        .nav-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border: solid black sizes.$border-width;
+            border-top: none;
+
+            background-color: white;
+
+            min-width: 180px;
+            min-height: 60px;
+            padding: 1em;
+
+            &:not(:first-child){
+                border-left: none;
+            }
+
+            svg.nav-icon{
+                width: sizes.$navbar-icons-size;
+                height: sizes.$navbar-icons-size;
+
+                margin-left: 1em;
+
+                circle{
+                    cx: math.div(sizes.$navbar-icons-size, 2);
+                    cy: math.div(sizes.$navbar-icons-size, 2);
+                    r: math.div(sizes.$navbar-icons-size, 2.5);
+                }
+            }
+
+            @mixin active-colors(){
+                @for $counter from 1 through 5{
+                    &:nth-child(#{$counter}){
+                        background-color: map-get(colors.$nav-colors, 'nav-color-' + #{$counter});
+                        color: white;
+                    }
+                }
+            }
+
+            @mixin icons-colors(){
+                @for $counter from 1 through 5{
+                    &:nth-child(#{$counter}){
+                        > svg.nav-icon > circle{
+                            stroke: black;
+                            stroke-width: 3px;
+                            fill: map-get(colors.$nav-colors, 'nav-color-' + #{$counter});
+                        }
+                    }
+                }
+            }
+
+            @include icons-colors();
+
+            &:has(.nav-link.active){
+                @include active-colors();
+            }
+        }
+    }
+}

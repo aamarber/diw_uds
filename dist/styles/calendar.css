@@ -1,0 +1,38 @@
+.hasDatepicker a {
+  text-decoration: none;
+}
+.hasDatepicker .ui-datepicker {
+  display: flex !important;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-group {
+  margin-right: 5em;
+}
+@media (max-width: 768px) {
+  .hasDatepicker .ui-datepicker .ui-datepicker-group {
+    margin-right: 2.5em;
+  }
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-title {
+  text-align: center;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-calendar td {
+  border: none;
+  text-align: center;
+  padding: 0.25em;
+}
+@media (max-width: 768px) {
+  .hasDatepicker .ui-datepicker .ui-datepicker-calendar td {
+    padding: 0.15em;
+  }
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-calendar td.ui-state-highlight {
+  background-color: #D1FBE0;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-calendar td.ui-state-highlight a {
+  background: none;
+  color: #005477;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-prev,
+.hasDatepicker .ui-datepicker .ui-datepicker-next {
+  display: none;
+}

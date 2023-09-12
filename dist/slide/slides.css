@@ -1,0 +1,103 @@
+slide-component:nth-child(odd) .row.slide {
+  background-color: #caeffb;
+}
+slide-component:nth-child(odd) .row.slide a {
+  color: #4928f5;
+}
+slide-component:nth-child(even) .row.slide {
+  background-color: #4928f5;
+  color: white;
+}
+slide-component:nth-child(even) .row.slide a {
+  color: #caeffb;
+}
+slide-component:nth-child(even) .row.slide h2 {
+  color: #D1FBE0;
+}
+
+.slides-container .row.slide,
+slide-component .row.slide {
+  min-height: 100vh;
+  max-width: 100vw;
+  padding-top: 9.75em;
+  padding-left: 6.5em;
+}
+@media (max-width: 768px) {
+  .slides-container .row.slide,
+  slide-component .row.slide {
+    min-height: calc(100vh - 26em);
+  }
+}
+.slides-container .row.slide h2,
+slide-component .row.slide h2 {
+  color: #005477;
+  font-size: 12vh;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .slides-container .row.slide h2,
+  slide-component .row.slide h2 {
+    font-size: 3vh;
+  }
+}
+.slides-container .row.slide h3,
+slide-component .row.slide h3 {
+  font-size: 4.8vh;
+}
+@media (max-width: 768px) {
+  .slides-container .row.slide h3,
+  slide-component .row.slide h3 {
+    font-size: 1.2vh;
+  }
+}
+.slides-container .row.slide h4,
+slide-component .row.slide h4 {
+  font-size: 3.6vh;
+}
+@media (max-width: 768px) {
+  .slides-container .row.slide h4,
+  slide-component .row.slide h4 {
+    font-size: 1.44vh;
+  }
+}
+.slides-container .row.slide article,
+slide-component .row.slide article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slides-container .row.slide img,
+slide-component .row.slide img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .slides-container .row.slide img,
+  slide-component .row.slide img {
+    max-width: 20em;
+  }
+}
+.slides-container .row.slide h2:not(:first-child), .slides-container .row.slide h3:not(:first-child), .slides-container .row.slide h4:not(:first-child), .slides-container .row.slide p:not(:first-child),
+slide-component .row.slide h2:not(:first-child),
+slide-component .row.slide h3:not(:first-child),
+slide-component .row.slide h4:not(:first-child),
+slide-component .row.slide p:not(:first-child) {
+  margin-top: 0.25em;
+}
+.slides-container .row.slide .centered,
+slide-component .row.slide .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides-container .row.slide video,
+slide-component .row.slide video {
+  width: 100%;
+}
+.slides-container .row.slider-container,
+slide-component .row.slider-container {
+  align-self: flex-end;
+}
+.slides-container .row.slider-container .slider-button,
+slide-component .row.slider-container .slider-button {
+  font-size: 5em;
+}
