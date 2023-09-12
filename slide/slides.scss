@@ -56,6 +56,10 @@ slide-component{
             h3{
                 font-size: sizes.$secondary-title-size;
 
+                a{
+                    font-size: sizes.$secondary-title-size;
+                }
+
                 @include sizes.media-query(md) { 
                     font-size: sizes.$secondary-title-size * 0.25;
                 }

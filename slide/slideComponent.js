@@ -95,10 +95,10 @@ class Slide extends HTMLElement {
     }
 
     hydrateImageTemplate(image){
-        return `
+        return image ? `
         <section class="col-lg-2 col-12">
             <img src="${image}">
-        </section>`;
+        </section>` : '';
     }
 
     hydrateSlideContentTemplate(title, texts){

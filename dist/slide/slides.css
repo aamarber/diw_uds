@@ -44,6 +44,10 @@ slide-component .row.slide h2 {
 slide-component .row.slide h3 {
   font-size: 4.8vh;
 }
+.slides-container .row.slide h3 a,
+slide-component .row.slide h3 a {
+  font-size: 4.8vh;
+}
 @media (max-width: 768px) {
   .slides-container .row.slide h3,
   slide-component .row.slide h3 {
