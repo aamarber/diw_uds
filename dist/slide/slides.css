@@ -53,6 +53,10 @@ slide-component .row.slide h3 a {
   slide-component .row.slide h3 {
     font-size: 1.2vh;
   }
+  .slides-container .row.slide h3 a,
+  slide-component .row.slide h3 a {
+    font-size: 1.2vh;
+  }
 }
 .slides-container .row.slide h4,
 slide-component .row.slide h4 {
