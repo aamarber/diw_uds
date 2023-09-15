@@ -1,0 +1,31 @@
+#temporalizacion{
+    table{
+        tbody{
+            tr{
+                background-color: white;
+                color: black;
+
+                &:first-child{
+                    background-color: #ff5254;
+                    color: white;
+                }
+                td:nth-child(1){
+                    width: 11%;
+                }
+                td:nth-child(2){
+                    width: 32%;
+                }
+                td:nth-child(3){
+                    width: 14%;
+                }
+                td:nth-child(4){
+                    width: 11%;
+                }
+                td:nth-child(5){
+                    width: 31%;
+                }
+            }
+
+        }
+    }
+}
