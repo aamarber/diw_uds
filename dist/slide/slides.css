@@ -22,12 +22,6 @@ slide-component .row.slide {
   padding-top: 9.75em;
   padding-left: 6.5em;
 }
-@media (max-width: 768px) {
-  .slides-container .row.slide,
-  slide-component .row.slide {
-    min-height: calc(100vh - 26em);
-  }
-}
 .slides-container .row.slide h2,
 slide-component .row.slide h2 {
   color: #005477;
@@ -37,7 +31,7 @@ slide-component .row.slide h2 {
 @media (max-width: 768px) {
   .slides-container .row.slide h2,
   slide-component .row.slide h2 {
-    font-size: 3vh;
+    font-size: 6vh;
   }
 }
 .slides-container .row.slide h3,
@@ -51,11 +45,11 @@ slide-component .row.slide h3 a {
 @media (max-width: 768px) {
   .slides-container .row.slide h3,
   slide-component .row.slide h3 {
-    font-size: 1.2vh;
+    font-size: 2.4vh;
   }
   .slides-container .row.slide h3 a,
   slide-component .row.slide h3 a {
-    font-size: 1.2vh;
+    font-size: 2.4vh;
   }
 }
 .slides-container .row.slide h4,
@@ -65,7 +59,7 @@ slide-component .row.slide h4 {
 @media (max-width: 768px) {
   .slides-container .row.slide h4,
   slide-component .row.slide h4 {
-    font-size: 1.44vh;
+    font-size: 1.92vh;
   }
 }
 .slides-container .row.slide article,
