@@ -1,9 +1,13 @@
+@use '../styles/colors';
+
 #temporalizacion{
     table{
         tbody{
             tr{
                 background-color: white;
                 color: black;
+
+                border: solid 1px colors.$ceed-main-color;
 
                 &:first-child{
                     background-color: #ff5254;
