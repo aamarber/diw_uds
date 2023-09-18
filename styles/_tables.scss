@@ -1,0 +1,17 @@
+@use '../styles/colors';
+
+table{
+    tbody{
+        tr{
+            background-color: white;
+            color: black;
+
+            border: solid 1px colors.$ceed-main-color;
+
+            th{
+                background-color: colors.$ceed-main-color;
+                color: white;
+            }
+        }
+    }
+}
